@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /*Fontes famosas - Arial, Verdana, Helvetica*/
+        /*sans-serif, serif e monospace são globais, todo dispositivo tem uma*/
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*Safe combination - Se não der a primeira tenta a outra*/
+            /*Medidas absolutas - cm, mm, px, pt, pc (A apresentação pode ser diferente pois isso varia de cada tela)
+            Medidas relativas - em (altura m), ex (altura x), rem, vw (porcentagem largura da tela), vh (vamos usar principalmente o em)
+            Usar apenas px e em (melhor em) - 1em = 16px*/
+            /*font-size: 16px; - tamanho padrão*/
+            font-size: 1em;
+        }
+        h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae distinctio, quis eos suscipit fugit blanditiis doloremque doloribus commodi cum ratione magnam natus reprehenderit possimus, voluptatem, quae perferendis qui enim atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus provident pariatur necessitatibus, dolor deserunt hic veniam dolorum corporis, eligendi esse ullam nam ratione architecto alias molestiae ipsam. Magnam, nulla.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam vel fugiat rem voluptatibus, aut officiis ex repudiandae numquam sunt nihil voluptatem! Optio eum obcaecati magnam suscipit quod delectus debitis.</p>
+</body>
+</html>

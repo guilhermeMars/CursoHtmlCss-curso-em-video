@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este vídeo está hospedado localmente</p>
+
+    <video width="500" poster="midia/praia.jpg" controls>
+        <source src="midia/meu-vid.mp4" type="video/mp4">
+        <source src="midia/meu-vid-webm.webm" type="video/webm">
+        <source src="midia/meu-vid-m4v.m4v" type="video/m4v">
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Compartilhar > incorporar (youtube) // Também aumenta a abrangência do google-->
+
+    <h1>Inserindo vídeos com vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/180252697" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--Vimeo - Outro serviço de hospedagem / qualidades - ótima resolução / desvantagens - algoritmo não muito bom-->
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir essa imagem em dispositivos diferentes ou aumente e diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Precisa ser nessa ordem-->
+        <img src="imagens/foto-g.png" alt="Foto Padrão">
+    </picture> <!--Muito importante para a experiância do usuário-->
+
+    <h1>Reproduzindo audio</h1>
+    <p>Bora reproduzir um aud em HTML 5</p>
+    <!--<audio preload="none"> __ só carrega quando clickar nele-->
+    <!--<audio preload="metadata" autoplay> __ começa a tocar quando a página carrega-->
+    <!--<audio preload="metadata" loop> __ fica em loop após ser iniciado-->
+    <audio preload="metadata" controls>
+        <source src="mídia/Banana.mp3" type="audio/mpeg">
+        <source src="mídia/Banana.ogg" type="audio/ogg">
+        <!--Também tem o tipo wav // Tentar evitar pois é muito pesado-->
+        <p>infelizmente o seu navegador não tem compatibilidade para audios. <br><a href="mídia/Banana.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</body>
+</html>

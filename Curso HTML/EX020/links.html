@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(245, 72, 72);
+        }
+
+        a:hover{
+            color: darkred;
+            text-decoration: underline;
+        }
+
+        a:active{ /*Quando é clickado*/
+            color: rgb(136, 255, 0);
+        }
+        
+        /*Pseudo-elementos - ::
+        Mexem no conteúdo em si*/
+        a::before{
+            content: "▶ ";
+            color: black;
+        }
+
+        a::after{
+            content: " ◀";
+            color: black;
+        }
+
+        a.especial::before{
+            content: "▶ ";
+            color: gold;
+        }
+
+        a.especial::after{
+            content: " ◀";
+            color: gold;
+            background-color: gray;
+        }
+        /*a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }*/
+    
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/guilhermeMars" target="_blank" rel="external" class="especial">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCb9aCJcMJze3khCkzV-pyEw" target="_blank" rel="external">Canal Youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/13%20-%20Cores.pdf" target="_blank" rel="external">Repositório do CursoEmVídeo</a></li>
+        
+    </ul>
+</body>
+</html>
